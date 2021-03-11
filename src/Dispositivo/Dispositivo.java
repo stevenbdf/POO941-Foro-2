@@ -90,6 +90,7 @@ public class Dispositivo {
                 if (valor == null) {
                     throw new Exception();
                 }
+                
                 valorValido = true;
 
             } catch (Exception e) {

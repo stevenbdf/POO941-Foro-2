@@ -1,7 +1,6 @@
 package Desktop;
 
 import Dispositivo.Dispositivo;
-import javax.swing.JOptionPane;
 
 public class Desktop extends Dispositivo {
 
