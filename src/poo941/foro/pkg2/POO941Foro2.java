@@ -34,7 +34,6 @@ public class POO941Foro2 {
                     // Exit program 
                     salirPrograma = true;
                     break;
-
             }
 
             /**
@@ -70,7 +69,7 @@ public class POO941Foro2 {
             scanner.nextLine();
 
             // if opcion has one of these values, opcion is valid
-            opcionValida = opcion == 1 || opcion == 2 || opcion == 3 || opcion == 4 || opcion == 5;
+            opcionValida = opcion == 1 || opcion == 2 || opcion == 3;
 
             if (opcionValida) {
                 // if opcion is valid set return opcion to opcion
@@ -127,7 +126,7 @@ public class POO941Foro2 {
             scanner.nextLine();
 
             // if opcion has one of these values, opcion is valid
-            opcionValida = opcion == 1 || opcion == 2 || opcion == 3 || opcion == 4 || opcion == 5;
+            opcionValida = opcion == 1 || opcion == 2 || opcion == 3;
 
             if (opcionValida) {
                 // if opcion is valid set return opcion to opcion
