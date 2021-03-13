@@ -51,4 +51,14 @@ public class Tablet extends Dispositivo {
     public void setSistemaOperativo(String sistemaOperativo) {
         this.sistemaOperativo = sistemaOperativo;
     }
+    
+    public void ingresarDatos() {
+        super.ingresarDatosFabricante();
+
+        this.tamanioPantalla = super.mostrarDialogo("Ingrese el tamaño de la pantalla: ", true);
+
+        this.tipoPantalla = super.mostrarDialogo("Ingrese el tipo de pantalla (capacitiva / resistiva): ", false);
+
+        this.sistemaOperativo = super.mostrarDialogo("Ingrese el nombre del Sistema Operativo: ", false);
+    }   
 }
