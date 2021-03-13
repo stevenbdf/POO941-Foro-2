@@ -149,7 +149,9 @@ public class POO941Foro2 {
                 desktops.add(desktop);
                 break;
             case 2:
-                //aqui vas Monica
+                Laptop laptop = new Laptop();
+                laptop.ingresarDatos();
+                laptops.add(laptop);
                 break;
             case 3:
                 Tablet tableta = new Tablet();
