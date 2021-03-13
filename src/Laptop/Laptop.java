@@ -35,4 +35,12 @@ public class Laptop extends Dispositivo {
     public void setCapacidadDiscoDuro(int capacidadDiscoDuro) {
         this.capacidadDiscoDuro = capacidadDiscoDuro;
     }
+
+    public void ingresarDatos() {
+        super.ingresarDatosFabricante();
+
+        this.tamanioPantalla = super.mostrarDialogo("Ingrese el tamanio de la pantalla", true);
+
+        this.capacidadDiscoDuro = super.mostrarDialogo("Ingrese la capacidad del disco duro en GB", true);
+    }
 }

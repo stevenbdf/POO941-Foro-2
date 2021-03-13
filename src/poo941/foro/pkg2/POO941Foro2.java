@@ -148,6 +148,16 @@ public class POO941Foro2 {
                 desktop.ingresarDatos();
                 desktops.add(desktop);
                 break;
+            case 2:
+                Laptop laptop = new Laptop();
+                laptop.ingresarDatos();
+                laptops.add(laptop);
+                break;
+            case 3:
+                Tablet tableta = new Tablet();
+                tableta.ingresarDatos();
+                tablets.add(tableta);
+                break;
             default:
                 throw new AssertionError();
         }
