@@ -5,6 +5,7 @@ import Laptop.Laptop;
 import Desktop.Desktop;
 import java.util.ArrayList;
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 public class POO941Foro2 {
 
@@ -49,26 +50,19 @@ public class POO941Foro2 {
     }
 
     static int imprimirMenu() {
+        String[] opciones = {"Registrar equipo", "Ver equipo", "Salir del programa"};
+
         boolean opcionValida = false;
 
         // default return opcion is exit program
         int opcionSeleccionada = 5;
 
         do {
-            System.out.println("\n**************************************************");
-            System.out.println("* TODOPC                                         *");
-            System.out.println("*                                                *");
-            System.out.println("*                                                *");
-            System.out.println("* Selecciona una opcion para continuar:          *");
-            System.out.println("* 1. Registrar equipo                            *");
-            System.out.println("* 2. Ver equipos                                 *");
-            System.out.println("* 3. Salir del programa                          *");
-            System.out.println("**************************************************");
+            int opcion = JOptionPane.showOptionDialog(
+                    null, "Selecciona una opcion para continuar",
+                    "Menu", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE,
+                    null, opciones, opciones[0]) + 1;
 
-            int opcion = scanner.nextInt();
-            scanner.nextLine();
-
-            // if opcion has one of these values, opcion is valid
             opcionValida = opcion == 1 || opcion == 2 || opcion == 3;
 
             if (opcionValida) {
@@ -76,7 +70,7 @@ public class POO941Foro2 {
                 opcionSeleccionada = opcion;
             } else {
                 // else show invalid message and try again
-                System.out.println("Opcion invalida intentalo de nuevo");
+                JOptionPane.showMessageDialog(null, "Opcion invalida intentalo de nuevo", "Error", JOptionPane.ERROR_MESSAGE);
             }
 
         } while (!opcionValida);
@@ -85,15 +79,15 @@ public class POO941Foro2 {
     }
 
     static boolean correrDeNuevo() {
+        String[] opciones = {"Si, volver al menu", "No, salir del programa"};
+
         boolean opcionValida = false, correrDeNuevo = false;
 
         do {
-            System.out.println("\n¿Quieres realizar otra accion?");
-            System.out.println(" 1. Si, volver al menu");
-            System.out.println(" 2. No, salir del programa");
-
-            int opcion = scanner.nextInt();
-            scanner.nextLine();
+            int opcion = JOptionPane.showOptionDialog(
+                    null, "¿Quieres realizar otra accion?",
+                    "Menu", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE,
+                    null, opciones, opciones[0]) + 1;
 
             // if opcion is one of these values, opcion is valid
             opcionValida = opcion == 1 || opcion == 2;
@@ -103,7 +97,7 @@ public class POO941Foro2 {
                 correrDeNuevo = opcion == 1;
             } else {
                 // else show invalid message and try again
-                System.out.println("Opcion invalida intentalo de nuevo");
+                JOptionPane.showMessageDialog(null, "Opcion invalida intentalo de nuevo", "Error", JOptionPane.ERROR_MESSAGE);
             }
 
         } while (!opcionValida);
@@ -112,18 +106,17 @@ public class POO941Foro2 {
     }
 
     static int seleccionarTipoDispositivo() {
+        String[] opciones = {"Desktops", "Laptops", "Tablets"};
+
         boolean opcionValida = false;
 
         int opcionSeleccionada = 1;
 
         do {
-            System.out.println("\nSelecciona un tipo de dispositivo");
-            System.out.println(" 1. Desktops");
-            System.out.println(" 2. Laptops");
-            System.out.println(" 3. Tablets");
-
-            int opcion = scanner.nextInt();
-            scanner.nextLine();
+            int opcion = JOptionPane.showOptionDialog(
+                    null, "Selecciona un tipo de dispositivo",
+                    "Menu", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE,
+                    null, opciones, opciones[0]) + 1;
 
             // if opcion has one of these values, opcion is valid
             opcionValida = opcion == 1 || opcion == 2 || opcion == 3;
@@ -133,7 +126,7 @@ public class POO941Foro2 {
                 opcionSeleccionada = opcion;
             } else {
                 // else show invalid message and try again
-                System.out.println("Opcion invalida intentalo de nuevo");
+                JOptionPane.showMessageDialog(null, "Opcion invalida intentalo de nuevo", "Error", JOptionPane.ERROR_MESSAGE);
             }
 
         } while (!opcionValida);
