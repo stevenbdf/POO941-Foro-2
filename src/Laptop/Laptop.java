@@ -1,6 +1,7 @@
 package Laptop;
 
 import Dispositivo.Dispositivo;
+import javax.swing.JOptionPane;
 
 public class Laptop extends Dispositivo {
 
@@ -42,5 +43,9 @@ public class Laptop extends Dispositivo {
         this.tamanioPantalla = super.mostrarDialogo("Ingrese el tamanio de la pantalla", true);
 
         this.capacidadDiscoDuro = super.mostrarDialogo("Ingrese la capacidad del disco duro en GB", true);
+    }
+    
+    public void imprimirLaptop(){
+        JOptionPane.showMessageDialog(null, super.imprimirDatosGenerales()+"Tamaño pantalla:  "+this.tamanioPantalla+"\"\n"+"Capacidad de disco duro: "+this.capacidadDiscoDuro+" GB");
     }
 }

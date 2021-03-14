@@ -115,6 +115,6 @@ public class Dispositivo {
     
     public String imprimirDatosGenerales(){
         //JOptionPane.showMessageDialog(null, "Fabricante: "+this.fabricante+"\n"+"Modelo: "+this.modelo+"\n"+"Microprocesador: "+this.microProcesador+"\n"+"Memoria: "+this.memoria+"\n");
-        return("Fabricante: "+this.fabricante+"\n"+"Modelo: "+this.modelo+"\n"+"Microprocesador: "+this.microProcesador+"\n"+"Memoria: "+this.memoria+"\n");
+        return("Fabricante: "+this.fabricante+"\n"+"Modelo: "+this.modelo+"\n"+"Microprocesador: "+this.microProcesador+"\n"+"Memoria: "+this.memoria+" GB RAM\n");
     }
 }

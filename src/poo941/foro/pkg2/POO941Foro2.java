@@ -160,15 +160,19 @@ public class POO941Foro2 {
     static void mostrarDispositivo(int tipoDispositivo){
         switch (tipoDispositivo){
             case 1:
-                
+                for (int i = 0; i < desktops.size(); i++ ){
+                    desktops.get(i).imprimirDesktop();
+                }
                 break;
             case 2:
-                
+                for (int j = 0; j < laptops.size(); j++ ){
+                    laptops.get(j).imprimirLaptop();
+                }
                 break;
             case 3:
-                for (int i = 0; i < tablets.size(); i++ ){
-                    //tablets.get(i).imprimirDatosGenerales();
-                    tablets.get(i).imprimirTablet();
+                for (int k = 0; k < tablets.size(); k++ ){
+                    //tablets.get(k).imprimirDatosGenerales();
+                    tablets.get(k).imprimirTablet();
                 } 
                 break;
             default:

@@ -1,6 +1,7 @@
 package Desktop;
 
 import Dispositivo.Dispositivo;
+import javax.swing.JOptionPane;
 
 public class Desktop extends Dispositivo {
 
@@ -60,6 +61,10 @@ public class Desktop extends Dispositivo {
         this.tamanioTorre = super.mostrarDialogo("Ingrese el tamaño de torre en pulgadas", true);
 
         this.capacidadDiscoDuro = super.mostrarDialogo("Ingrese la capacidad del disco duro en GB", true);
+    }
+    
+    public void imprimirDesktop(){
+        JOptionPane.showMessageDialog(null, super.imprimirDatosGenerales()+"Tarjeta gráfica:  "+this.tarjetaGrafica+"\n"+"Tamaño de torre: "+this.tamanioTorre+" pulgadas \n"+"Capacidad de disco duro: "+this.capacidadDiscoDuro+" GB");
     }
 
 }
