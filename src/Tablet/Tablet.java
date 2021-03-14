@@ -1,6 +1,7 @@
 package Tablet;
 
 import Dispositivo.Dispositivo;
+import javax.swing.JOptionPane;
 
 public class Tablet extends Dispositivo {
 
@@ -61,4 +62,9 @@ public class Tablet extends Dispositivo {
 
         this.sistemaOperativo = super.mostrarDialogo("Ingrese el nombre del Sistema Operativo: ", false);
     }   
+    
+    public void imprimirTablet(){
+        JOptionPane.showMessageDialog(null, "Tamaño diagonal de pantalla:  "+this.tamanioPantalla+"\n"+"¿Capacitiva/Resistiva? "+this.tipoPantalla+"\n"+"Sistema Operativo: "+this.sistemaOperativo);
+    }
+    
 }

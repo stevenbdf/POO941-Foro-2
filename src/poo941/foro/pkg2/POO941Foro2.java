@@ -30,6 +30,7 @@ public class POO941Foro2 {
                     registrarDispositivo(seleccionarTipoDispositivo());
                     break;
                 case 2:
+                    mostrarDispositivo(seleccionarTipoDispositivo());
                     break;
                 case 3:
                     // Exit program 
@@ -150,6 +151,24 @@ public class POO941Foro2 {
                 Tablet tableta = new Tablet();
                 tableta.ingresarDatos();
                 tablets.add(tableta);
+                break;
+            default:
+                throw new AssertionError();
+        }
+    }
+    
+    static void mostrarDispositivo(int tipoDispositivo){
+        switch (tipoDispositivo){
+            case 1:
+                
+                break;
+            case 2:
+                
+                break;
+            case 3:
+                Tablet tableta = new Tablet();
+                tableta.imprimirDatosGenerales();
+                tableta.imprimirTablet();
                 break;
             default:
                 throw new AssertionError();

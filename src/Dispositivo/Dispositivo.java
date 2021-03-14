@@ -112,4 +112,8 @@ public class Dispositivo {
 
         this.memoria = this.mostrarDialogo("Ingrese la cantidad de memoria del dispositivo en GB", true);
     }
+    
+    public void imprimirDatosGenerales(){
+        JOptionPane.showMessageDialog(null, "Fabricante: "+this.fabricante+"\n"+"Modelo: "+this.modelo+"\n"+"Microprocesador: "+this.microProcesador+"\n"+"Memoria: "+this.memoria+"\n");
+    }
 }
