@@ -166,9 +166,10 @@ public class POO941Foro2 {
                 
                 break;
             case 3:
-                Tablet tableta = new Tablet();
-                tableta.imprimirDatosGenerales();
-                tableta.imprimirTablet();
+                for (int i = 0; i < tablets.size(); i++ ){
+                    //tablets.get(i).imprimirDatosGenerales();
+                    tablets.get(i).imprimirTablet();
+                } 
                 break;
             default:
                 throw new AssertionError();

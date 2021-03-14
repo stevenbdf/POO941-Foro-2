@@ -64,7 +64,7 @@ public class Tablet extends Dispositivo {
     }   
     
     public void imprimirTablet(){
-        JOptionPane.showMessageDialog(null, "Tamaño diagonal de pantalla:  "+this.tamanioPantalla+"\n"+"¿Capacitiva/Resistiva? "+this.tipoPantalla+"\n"+"Sistema Operativo: "+this.sistemaOperativo);
+        JOptionPane.showMessageDialog(null, super.imprimirDatosGenerales()+"Tamaño diagonal de pantalla:  "+this.tamanioPantalla+"\n"+"¿Capacitiva/Resistiva? "+this.tipoPantalla+"\n"+"Sistema Operativo: "+this.sistemaOperativo);
     }
     
 }
